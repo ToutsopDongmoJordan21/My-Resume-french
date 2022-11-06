@@ -1,0 +1,97 @@
+.experience{
+    background-color: rgb(52, 58, 64);
+    height: 100%;
+}
+.mx-auto:after {
+  position: absolute;
+  content: "";
+  background-color: aqua;
+  height: 4px;
+  width: 35%;
+  border-radius: 5px;
+  left: 32.5%;
+  right: 0;
+  top: 100%;
+  bottom: 0;
+  margin-top: 20px;
+}
+.header{
+    position: relative;
+    font-size: 2.5em;
+    color: #eee;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px #222;
+  }
+  .sec-head::before{
+    position: absolute;
+    content: "SERVICES";
+    font-size: 7em;
+    font-weight: bold;
+    color: #6c757d!important;
+    opacity:0.2;
+    left: 20%;
+    right: 0;
+    width: 90px;
+    margin-top: 60px;
+  }
+.about-experience{
+  background-color: rgb(52, 58, 64);
+  color: #eee;
+  box-shadow: 1.5px 1.5px 5px rgb(52, 58, 64);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.about-experience:hover{
+  transform: translateY(-5px);
+  box-shadow: 2px 2px 5px rgb(52, 58, 64);
+}
+.sub-header{
+  font-weight: 500;
+  color: #ddd;
+  position: relative;
+  text-shadow: 2px 2px 5px rgb(52, 58, 64);
+}
+
+.featured-box.style-3 .featured-box-icon {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.featured-box.style-3 .featured-box-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center !important;
+}
+
+.featured-box:not(.style-5) .featured-box-icon {
+    min-width: 55px;
+    min-height: 55px;
+    margin-top: 0px;
+}
+
+
+
+.bg-dark-1 {
+    background-color: rgb(33, 37, 41) !important;
+}
+
+
+.grade h2, .personal h2{
+  color: #bbb;
+}
+
+
+  @media (max-width: 767px) {
+    .right-container{
+      padding: 0px !important;
+    }
+  }
+  

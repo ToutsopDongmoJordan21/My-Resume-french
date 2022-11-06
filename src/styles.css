@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+/* @import "~animate.css/animate.css"; */
+
+html, body {
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    font-family: Roboto,
+    "Helvetica Neue", sans-serif;
+}
+*::-webkit-scrollbar {
+    width: 10px;
+}
+  *::-webkit-scrollbar-track {
+    background: #20c997;;
+    border-radius: 10px; 
+    opacity: 0.5;
+}
+  *::-webkit-scrollbar-thumb {
+    background-color: #0F283F;
+    border-radius: 20px;
+    border: 2px solid #20c997;;
+}
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    transition: .15s ease-in-out;
+}

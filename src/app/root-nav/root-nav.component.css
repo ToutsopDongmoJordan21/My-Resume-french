@@ -1,0 +1,59 @@
+.sidenav-container {
+  height: 50%;
+}
+.sidenav {
+  width: 270px;
+  margin: 0px;
+  background-color: #050608;
+}
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+::ng-deep .tool-container{
+  background-color: transparent !important;
+}
+.app-container{
+  overflow-x: hidden !important;
+  width: 93%;
+}
+::ng-deep .toggle-btn{
+  position: fixed;
+  color: transparent !important;
+}
+a {
+  color: #eee !important;
+}
+a.active{
+  color: #20c997 !important;
+}
+.cover{
+  background-image:linear-gradient(-45deg, rgba(15,40,63,0.5), rgba(15,40,63,0.5));
+  background-image: -webkit-linear-gradient(-45deg, rgba(15,40,63,0.5), rgba(15,40,63,0.5));
+  background-image: -o-linear-gradient(-45deg, rgba(15,40,63,0.5), rgba(15,40,63,0.5));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  background-attachment: fixed;
+}
+.main-container{
+  background-color: transparent;
+}
+.profile-pic{
+  margin: 15px auto;
+  display: block;
+  width: 150px;
+  border: 8px solid #2c2f3f;
+}
+.profile-text{
+  color: #ddd;
+}
+.profile-text h1{
+  text-shadow: 2px 2px 3px #000;
+}

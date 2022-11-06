@@ -1,0 +1,9 @@
+<div class="py-4 d-flex w-100 h-100 overflow-hidden">
+    <ul class="list-unstyled mx-auto my-auto" >
+        <li class="d-inline px-1" *ngFor="let contact of contacts">
+            <a href="{{contact.href}}" target="_blank" style="margin-right: 10px;">
+                <i class="fa fa-1x"  class="{{contact.icon}}"></i>
+            </a>
+        </li>
+    </ul>
+</div>

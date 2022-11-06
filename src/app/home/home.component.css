@@ -1,0 +1,53 @@
+.cover{
+
+  background-image: url(../../assets/2c.png);
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  background-color: #111418 !important;
+  opacity: 0.7;
+
+}
+button :hover {
+  background-color: #20c997;
+  border-color: #20c997;
+  color: #fff;
+}
+.btn {
+  padding: 0.8rem 2.6rem;
+  font-weight: 500;
+  border-width: 2px;
+}
+
+.inner-section{
+    color: #fff;
+}
+.inner-section h1{
+    font-size: 5vw;
+    font-weight: 500;
+    text-shadow: 2.5px 2.5px 3px #0F283F;
+}
+
+.explore-btn{
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #0F283F;
+  font-weight: 500;
+  transition: .2s ease-in-out;
+}
+.explore-btn:hover{
+  background-color: rgba(255, 255, 255, 0.9);
+  /* background-color: rgba(61,85,97, 0.7); */
+  /* color: #ddd; */
+}
+@media (max-width: 767px) {
+  .inner-section h1{
+    font-size: 7vw;
+    /* padding: 0px !important; */
+}
+.explore-btn{
+  margin-top: 0px !important;
+}  
+}

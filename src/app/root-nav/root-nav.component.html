@@ -1,0 +1,63 @@
+<div ng-app="myApp" class="cover py-4">
+  <mat-sidenav-container class="wrap main-container " 
+        ng-controller="MyCtrl">
+    <mat-sidenav #drawer class="sidenav p-0" fixedInViewport
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+
+        <div class="profile-card text-center pt-5 pb-2" >
+          <img mat-card-avatar src="../../assets/profile1.jpg" 
+              alt="" class="img-fluid rounded-circle profile-pic"
+              style="margin-top: -05%;">
+          <div class="profile-text py-3" style="margin-top: -10%;">
+            <h1 class="m-0"><b>Toutsop Jordan</b></h1>
+          </div>
+
+          <mat-nav-list role="navigation" style="margin-left: 30%;">
+            <a mat-list-item href="#home" du-smooth-scroll du-scrollspy offset="30" class="m-0 side-link" >
+              <i aria-hidden="true"></i>Home</a>
+            <a mat-list-item href="#about" du-smooth-scroll du-scrollspy offset="0" class="m-0 side-link">
+              <i aria-hidden="true"></i>About me</a>
+            <a mat-list-item href="#experience" du-smooth-scroll du-scrollspy offset="0" class="m-0 side-link">
+              <i aria-hidden="true"></i>What I Do</a>
+            <a mat-list-item href="#skills" du-smooth-scroll du-scrollspy offset="0" class="m-0 side-link">
+              <i aria-hidden="true"></i>Resume</a>
+            <a mat-list-item href="#portfolio" du-smooth-scroll du-scrollspy offset="0" class="m-0 side-link">
+              <i aria-hidden="true"></i>Portfolio</a>
+            <a mat-list-item href="#testimonial" du-smooth-scroll du-scrollspy offset="0" class="m-0 side-link">
+              <i aria-hidden="true"></i>Testimonies</a>
+            <a mat-list-item href="#contact" du-smooth-scroll du-scrollspy offset="0"class="m-0 side-link">
+              <i aria-hidden="true"></i>Contact</a>
+          </mat-nav-list>
+
+          <div class="icons" >
+              <app-icons></app-icons>
+          </div>
+
+        </div>
+     
+    </mat-sidenav>
+      <div class="container app-container">
+        <mat-toolbar class="tool-container fixed-top">
+          <button
+            type="button"
+            aria-label="Toggle sidenav"
+            mat-icon-button
+            (click)="drawer.toggle()"
+            *ngIf="isHandset$ | async">
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+          </button>
+          
+        </mat-toolbar>
+            <!-- Add Content Here -->
+          <app-home id="home"></app-home>
+          <app-about id="about"></app-about>
+          <app-experience id="experience"></app-experience>
+          <app-skills id="skills"></app-skills>
+          <app-portfolio id="portfolio"></app-portfolio>
+          <app-testimonial id="testimonial"></app-testimonial>
+          <app-contact id="contact"></app-contact>
+      </div>
+</mat-sidenav-container>
+</div>

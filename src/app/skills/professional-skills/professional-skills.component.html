@@ -1,0 +1,32 @@
+
+    <div id="skills" (scroll)="onWindowScroll()" data-aos="fade-up" data-aos-duration="700">
+        <ul class="list-unstyled" >
+            <li class="d-inline" *ngFor="let course of courses">
+                <circle-progress
+                [percent]="course.percent"
+                [space]="-10"
+                [radius]="40"
+                [outerStrokeWidth]="6"
+                [outerStrokeGradient]="true"
+                [outerStrokeColor]="'#A9A9A9'"
+                [outerStrokeGradientStopColor]="'#0F283F'"
+                [innerStrokeWidth]="6"
+                [innerStrokeColor]="'transparent'"
+                [animationDuration]="1000"
+                [backgroundOpacity]="0"
+                [backgroundGradient]="false"
+                [backgroundColor]="'transparent'"
+                [titleColor]="'#aaa'"
+                [unitsColor]="'#bbb'"
+                [subtitle]="course.subTitle"
+                [subtitleColor]="'#aaa'"
+                [animation]="animate"
+                animateOnScroll
+                animationName="animation"
+                [animationDuration]="2000"
+                >
+                </circle-progress>
+            </li>
+        </ul>
+      </div>
+  

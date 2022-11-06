@@ -1,0 +1,83 @@
+<div class=" contact w-100 py-5">
+  <div class="d-flex w-100 sec-head py-2">
+    <h1 class="mx-auto header" style="margin-top: 60px;">
+        Get in Touch
+    </h1>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5 text-md-start"
+          style=" margin-top: 05%; font-size: larger; float:left;">
+      <h2 class="mb-3 text-5 text-white text-uppercase" style="margin-left:60px ;">
+          Address
+      </h2>
+        <p class="text-3 text-light mb-4" style="margin-left:60px ;">Douala Cameroon,<br>
+          Bonamoussadi , Parcourt vita.<br>
+          Axe Lourd Bepanda 
+        </p>
+        <p class="text-3 text-light mb-1" style="margin-left:60px ;">
+          <span class="text-primary text-4 me-2">
+            <i class="fas fa-phone" style="color: #20c997;"></i>
+          </span>
+            <span style="margin-left: 10px;">(+237) 699 028 439 </span>
+        </p>
+        <p class="text-3 text-light mb-1" style="margin-left:60px ;">
+          <span class="text-primary text-4 me-2">
+            <i class="fas fa-fax" style="color: #20c997;"></i>
+          </span>
+            <span style="margin-left: 10px;">(+237) 681 409 045 </span>
+        </p>
+        <p class="text-3 text-light mb-4" style="margin-left:60px ;">
+          <span class="text-primary text-4 me-2">
+            <i class="fas fa-envelope" style="color: #20c997;"></i>
+          </span>
+            <span style="margin-left: 10px;">toutsopjordan1999@gmail.com </span>
+        </p>
+        <h2 class="mb-3 text-5 text-white text-uppercase" style="margin-left:60px ;">
+          Follow Me
+        </h2>
+        <div class="item-list" style="margin-left: 60px;">
+          <ul class="list-unstyled my-auto" style="font-size: large;">
+            <li class="d-inline px-1" *ngFor="let contact of contacts">
+              <a href="{{contact.href}}" style="margin-right: 10px;">
+                <i class="fa fa-1x"  class="{{contact.icon}}"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div class="col-md-7 order-0 order-md-1" style="float: right; margin-top: 05%;">
+      <h2 class="mb-3 text-5 text-white text-uppercase text-center text-md-start">
+          Send us a note
+      </h2>
+			<form id="contact-form" class="form-dark"
+            (ngSubmit)="onSubmit()" *ngIf="registrationForm" [formGroup]="registrationForm">
+			  <div class="row g-4">
+          <div class="col-xl-6">
+            <input name="name" type="text" class="form-control" 
+                  [formControl]="usernameControl"
+                  required="" placeholder="Name" style="width: 90%; height: 120%;">
+          </div>
+          <div class="col-xl-6">
+            <input name="email" type="email" class="form-control" 
+                  [formControl]="emailControl"
+                  required="" placeholder="Email" style="width: 90%; height: 120%;">
+          </div>
+				  <div class="col-xl-12" style="width: 60px;">
+					  <textarea name="form-message" class="form-control" rows="5" required="" 
+                  [formControl]="textControl"
+                  placeholder="Tell us more about your needs........"
+                  style="margin-top: 03%; width: 95%;"></textarea>
+				  </div>
+        </div>
+          <p class="text-center mt-4 mb-0">
+				    <button id="submit-btn" class="btn btn-primary rounded-pill d-inline-flex" 
+                [disabled]="!registrationForm.valid"
+                type="submit" style="background-color: #1baa80; border-color: #1baa80;">Send Message
+            </button>
+          </p>
+      </form>
+    </div>
+  </div>
+
+</div>

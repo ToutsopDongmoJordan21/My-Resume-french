@@ -1,0 +1,343 @@
+mat-grid-list{
+    overflow-x: hidden;
+}
+mat-grid-tile {
+    overflow: hidden;
+    /* background-color: lightblue; */
+}
+.left-col {
+    padding-top: 15%;
+    text-align: right;
+}
+.left-col h1 {
+    color: #0E2130;
+    text-align: right !important;
+}
+.left1 {
+    writing-mode: vertical-rl;
+}
+.logistic {
+    text-align: left;
+}
+.sports::before {
+    text-align: right !important;
+    position: absolute;
+    color: #0E2130;
+    content: "Adaptability";
+    font-size: 2vw;
+    top: 0;
+    bottom: 100%;
+    right: 12%;
+    left: 0;
+}
+
+.industrial {
+    color: #36A8DC;
+}
+
+.sports {
+    color: #dddddd;
+}
+.text {
+    font-size: 3vw;
+    line-height: 1.1;
+    font-family: Century Gothic;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+::ng-deep.right-side {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    text-align: bottom !important;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+.right{
+    text-align: left !important;
+}
+.right1 {
+    writing-mode: vertical-rl;
+}
+
+.hospitals {
+    text-align: left !important;
+    margin: 0 !important;
+}
+
+.hospitals span {
+    color: #dddddd;
+    text-align: start;
+    line-height: .9;
+    font-size: 3.2vw;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.hospitals small {
+    color: #0E2130;
+    padding-left: 0 !important;
+    margin: 0 !important;
+    font-size: 1.8vw;
+    text-align: start;
+}
+
+.residential span {
+    color: #0E2130;
+    padding-top: 0 !important;
+    line-height: 0.8;
+    text-align: left !important;
+}
+
+.residential small {
+    color: #36A8DC;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 1.8vw;
+    text-align: left !important;
+    align-self: left !important;
+}
+
+/* Extra large screens min-width 1367 */
+
+/* @media screen and (min-width: 1367px){
+    .left-col {
+        padding-top: 0% !important;
+        text-align: right;
+    }
+    .right-container{
+        padding-left: 8% !important;
+        padding-top: 31% !important;
+    }
+    
+} */
+/* @media screen and (min-width: 1281px) and (max-width: 1366px){
+    .left-col {
+        padding-top: 0% !important;
+        text-align: right;
+    }
+    .right-container{
+        padding-left: 5% !important;
+        padding-top: 0% !important;
+    }
+} */
+
+/* large Screen */
+
+/* @media screen and (max-width: 1280px){
+    .left-col {
+        padding-top: 7% !important;
+        text-align: right;
+    }
+    .right-container{
+        padding-left: 5% !important;
+        padding-top: 0% !important;
+    }
+} */
+
+/* Medium screen */
+
+/* @media screen and (max-width: 1024px){
+    .left-col {
+        padding-top: 20% !important;
+        text-align: right;
+    }
+    .right-container{
+        padding-left: 0% !important;
+        padding-top: 0% !important;
+    }
+    .hospitals span {
+        font-size: 3.1rem;
+    }
+    .text {
+        transform: scale(1.4);
+        font-size: 2.4rem;
+        line-height: 1;
+    }
+    .sports::before {
+        font-size: 1.7rem;
+        transform: scale(0.7) !important;
+        top: 0;
+        bottom: 50% !important;
+        right: 0;
+        left: 20% ;
+    }
+    .hospitals small {
+        font-size: 1.7rem;
+        transform: scale(0.7) !important;
+    }
+    
+    .residential small {
+        font-size: 1.5rem;
+        transform: scale(0.7) !important;
+        
+    }
+    .cons-container {
+        position: absolute;
+        top: -20%;
+        bottom: 10%;
+        right: 0;
+        left: -50%;
+        transform: rotate(-35deg) !important;
+    }
+    .consulting {
+        font-size: 2.8rem;
+        transform: scale(0.8, 1.4) !important;
+    }
+} */
+
+/* ipad screen  */
+
+ /* @media screen and (max-width: 768px){
+    .left-col {
+        width: 100% !important;
+        padding-top: 20% !important;
+        padding-right: 0 !important;
+        text-align: right;
+    }
+    .right-container{
+        width: 100% !important;
+        padding-left: 0% !important;
+        padding-top: 15% !important;
+    }
+    .hospitals span {
+        padding: 0 !important;
+        font-size: 2.5rem;
+    }  
+    .text {
+        transform: scale(1);
+        font-size: 2rem;
+        line-height: 1;
+    }
+    .sports::before {
+        font-size: 1.6rem;
+        transform: scale(0.6) !important;
+    }
+    small {
+        font-size: 1.6rem !important;
+        transform: scale(0.6) !important;
+    }
+    .cons-container {
+        position: absolute;
+        top: 0%;
+        bottom: 10%;
+        right: 0;
+        left: -50%;
+        transform: rotate(-35deg) !important;
+    }
+    .consulting {
+        font-size: 2.5rem;
+        transform: scale(0.6, 1.2) !important;
+    }
+    .hospitals {
+        text-align: left !important;
+        padding-bottom: 0% !important;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 0;
+        margin: 0 !important;
+    }
+} */
+/* tablet Screen */
+
+/* @media screen and (max-width: 600px){
+    .left-col {
+        width: 100% !important;
+        padding-top: 20% !important;
+        padding-right: 0 !important;
+        text-align: right;
+    }
+    .right-container{
+        width: 100% !important;
+        padding-left: 0% !important;
+        padding-top: 15% !important;
+    }
+    .hospitals span {
+        padding: 0 !important;
+        font-size: 2.3rem;
+    }  
+    .text {
+        transform: scale(1);
+        font-size: 1.7rem;
+        line-height: 1;
+    }
+    .sports::before {
+        font-size: 1.3rem;
+        transform: scale(0.6) !important;
+    }
+    small {
+        font-size: 1.3rem !important;
+        transform: scale(0.6) !important;
+    }
+    .cons-container {
+        position: absolute;
+        top: 0%;
+        bottom: 30%;
+        right: 0;
+        left: -20%;
+        transform: rotate(-35deg) !important;
+    }
+    .consulting {
+        font-size: 2.3rem;
+        transform: scale(0.6, 1.1) !important;
+    }
+    
+}  */
+
+/* Mobile Phone screen */
+
+/* @media screen and (max-width: 481px){
+    .left-col {
+        width: 100% !important;
+        padding-top: 20% !important;
+        padding-right: 0 !important;
+        text-align: right;
+    }
+    .right-container{
+        width: 100% !important;
+        padding-left: 0% !important;
+        padding-top: 15% !important;
+    }
+    .hospitals span {
+        padding: 0 !important;
+        font-size: 1.25rem;
+    }  
+    .text {
+        transform: scale(1);
+        font-size: 1rem;
+        line-height: 1;
+    }
+    .sports::before {
+        font-size: 0.8rem;
+        transform: scale(0.6) !important;
+    }
+    small {
+        font-size: 0.8rem !important;
+        transform: scale(0.6) !important;
+    }
+    .cons-container {
+        position: absolute;
+        top: 0%;
+        bottom: 10%;
+        right: 0;
+        left: -50%;
+        transform: rotate(-35deg) !important;
+    }
+    .consulting {
+        font-size: 1.25rem;
+        transform: scale(0.6, 1) !important;
+    }
+    .hospitals {
+        text-align: left !important;
+        padding-bottom: 0% !important;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 0;
+        margin: 0 !important;
+    }
+    .sports-cont{
+        padding-top: 5% !important;
+    }
+    .sports{
+        padding-top: 5% !important;
+    }
+} */
