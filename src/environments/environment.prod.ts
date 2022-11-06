@@ -1,12 +1,12 @@
 export const environment = {
   production: true,
   firebase:{
-    apiKey: "AIzaSyCIB0UlPjTjzQ79Aw8sawqHydeMq1R48Cs",
-  authDomain: "westerncare-31b45.firebaseapp.com",
-  projectId: "westerncare-31b45",
-  storageBucket: "westerncare-31b45.appspot.com",
-  messagingSenderId: "572845480683",
-  appId: "1:572845480683:web:50a5be2b8e2e9237303cae",
-  measurementId: "G-P4BY19S75N"
+    apiKey: "AIzaSyB2k2azSNorvvqabR9KTq3MdBbVxcZhXk0",
+  authDomain: "resume-jordan-f51a7.firebaseapp.com",
+  projectId: "resume-jordan-f51a7",
+  storageBucket: "resume-jordan-f51a7.appspot.com",
+  messagingSenderId: "933775263188",
+  appId: "1:933775263188:web:6b838b4d22f9cf73228241",
+  measurementId: "G-XCN2L7LJTM"
 }
 };

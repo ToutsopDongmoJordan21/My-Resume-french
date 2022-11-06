@@ -24,7 +24,7 @@
 }
 .sec-head::before{
     position: absolute;
-    content: "TESTIMONIAL";
+    content: "TEMOIGNAGE";
     font-size: 7em;
     font-weight: bold;
     color: #6c757d!important;

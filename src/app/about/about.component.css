@@ -11,7 +11,7 @@
 }
 .sec-head::before{
   position: absolute;
-  content: "ABOUT_ME";
+  content: "PROPOS DE MOI";
   font-size: 7em;
   font-weight: bold;
   color: rgba(86, 92, 99, 0.7);
