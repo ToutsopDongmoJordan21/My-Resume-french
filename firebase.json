@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/toutsop-jordan",
+    "public": "dist/toutsop-jordab",
     "ignore": [
       "firebase.json",
       "**/.*",
