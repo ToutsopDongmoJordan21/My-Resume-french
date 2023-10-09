@@ -28,12 +28,12 @@
     font-size: 7em;
     font-weight: bold;
     color: #6c757d!important;
-    left: 20%;
+    left: 23%;
     right: 0;
     width: 90px;
     margin-top: 60px;
     /* text-muted  */
-    opacity:0.2; 
+    opacity:0.2;
   }
 
   .header{
@@ -47,7 +47,7 @@
 
 li {
     display: list-item;
-    
+
 }
 
 nav-tabs {
